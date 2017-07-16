@@ -9,13 +9,12 @@
 
 library(shiny)
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
   # Application title
   titlePanel("Going Faster with mtcars Data"),
   
-  # Sidebar with a slider input for number of bins 
+  # Sidebar with app instructions
   sidebarLayout(
     sidebarPanel(
         h3("Instructions:"),
@@ -27,7 +26,7 @@ shinyUI(fluidPage(
         width=3
     ),
     
-    # Show a plot of the generated distribution
+    # Show a plot of qsec vs hp for mtcars
     mainPanel(
         h3("Quarter mile time and Horsepower"),
         p("Note that the blue line (linear model) shown only includes the horsepower,
